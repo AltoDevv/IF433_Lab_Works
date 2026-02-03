@@ -13,4 +13,8 @@ fun main (){
         else ->"D"
     }
     println("Grade kamu: $grade")
+
+    println("status: ${calculateStatus(score)}")
 }
+
+fun calculateStatus(score: Int) = if(score >75) "lulus" else "tidak lulus"
