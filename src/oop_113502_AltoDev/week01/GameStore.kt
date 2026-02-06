@@ -7,7 +7,28 @@ fun calculateDiscount(price: Int): Int =
         price - (price * 10 / 100)
     }
 
-fun main(){
-    val gameTitle = "aDev 2026"
+fun printReceipt(
+    title: String,
+    originalPrice: Int,
+    finalPrice: Int
+) {
+    println("===== SteamKW Digital Receipt =====")
+    println("Judul Game   : $title")
+    println("Harga Asli   : Rp $originalPrice")
+    println("Harga Akhir  : Rp $finalPrice")
+}
+
+fun main() {
+
+    val gameTitle = "Cyberpunk 2077"
     val price = 750000
+
+    val finalPrice = calculateDiscount(price)
+
+    printReceipt(
+        title = gameTitle,
+        originalPrice = price,
+        finalPrice = finalPrice
+    )
+
 }
