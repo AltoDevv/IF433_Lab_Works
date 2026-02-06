@@ -10,18 +10,24 @@ fun calculateDiscount(price: Int): Int =
 fun printReceipt(
     title: String,
     originalPrice: Int,
-    finalPrice: Int
+    finalPrice: Int,
+    note : String
 ){
     println("===== SteamKW Digital Receipt =====")
     println("Judul Game : $title")
     println("Harga Asli : RP $originalPrice")
     println("Harga Akhir : RP $finalPrice")
+    println("Catatan : $note")
 }
 fun main(){
     val gameTitle ="aDev 2026"
     val price = 750000
 
+    val userNote: String? = null
+
     val finalPrice = calculateDiscount(price)
 
-    printReceipt(gameTitle, price, finalPrice)
+    val noteToPrint = userNote ?: "tidak ada catatan"
+
+    printReceipt(gameTitle, price, finalPrice, noteToPrint)
 }
