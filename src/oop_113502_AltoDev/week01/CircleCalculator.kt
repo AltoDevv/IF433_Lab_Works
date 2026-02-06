@@ -1,6 +1,6 @@
 package oop_113502_AltoDev.week01
 
-fun main(args: Array<string>){
+fun main(){
     val radius = 7.0
     val pi = 3.14
 
