@@ -1,4 +1,4 @@
-package oop_113502_AltoDev_week02
+package oop_113502_AltoDev.week02
 
 import java.util.Scanner
 fun main() {
@@ -8,7 +8,7 @@ fun main() {
     val heroName = scanner.nextLine()
 
     println("Mmasukkan base damage hero: ")
-    val heroDamage = scanner.nextLine()
+    val heroDamage = scanner.nextInt()
 
     val hero = Hero(heroName,heroDamage)
 

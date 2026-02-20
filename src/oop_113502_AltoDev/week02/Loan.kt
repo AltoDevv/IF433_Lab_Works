@@ -1,4 +1,4 @@
-package oop_113502_AltoDev_week02
+package oop_113502_AltoDev.week02
 
 class Loan(
     val bookTitle: String,
