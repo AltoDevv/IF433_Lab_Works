@@ -11,4 +11,11 @@ fun main() {
     println("Nama: ${w1.name}")
     println("Damage: ${w1.damage}")
     println("Tier: ${w1.tier}")
+
+    val player1 = Player("Alto")
+
+    player1.addXP(50)
+    player1.addXP(60)   // harusnya naik level
+
+    player1.showStatus()
 }
