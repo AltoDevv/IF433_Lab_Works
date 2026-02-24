@@ -16,4 +16,15 @@ fun main(){
     tesla.accelerate()
     tesla.honk()
     tesla.openTrunk()
+
+    println("-------------")
+
+    val manager = Manager("Budi",10_000_000)
+    val developer = Developer("Andi",8_000_000,"Kotlin")
+
+    manager.work()
+    println("Bonus manager : rp ${manager.calculateBonus()}")
+
+    developer.work()
+    println("Bonus Developer : RP ${developer.calculateBonus()}")
 }
