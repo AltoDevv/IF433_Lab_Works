@@ -2,7 +2,7 @@ package oop_113502_AltoDev.week05
 
 class EWallet(accountName: String, var balance: Double) : PaymentMethod(accountName) {
 
-    override fun processPayment(amount: Double): Double {
+    override fun processPayment(amount: Double) {
 
         if (balance >= amount) {
             balance -= amount

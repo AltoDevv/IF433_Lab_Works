@@ -4,7 +4,7 @@ class CreditCard(accountName: String, var limit: Double) : PaymentMethod(account
 
     var usedAmount: Double = 0.0
 
-    override fun processPayment(amount: Double): Double {
+    override fun processPayment(amount: Double) {
 
         if (usedAmount + amount <= limit) {
             usedAmount += amount
