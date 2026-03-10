@@ -18,6 +18,9 @@ fun main(){
     hub.addDevice(speaker)
     hub.addDevice(cctv)
 
+    hub.activateSecurityMode()
+    hub.turnOffAllSwitches()
+
     //tutorial
     val myWatch = Smartwatch()
     myWatch.showTime()
