@@ -18,6 +18,12 @@ fun main(){
 
     for (p in payments) {
         p.processPayment(75000.0)
+
+        if (p is EWallet) {
+            p.topup(50000.0)
+            p.processPayment(75000.0)
+        }
+
     }
 
     val dosen1 = dosen("Pak Alex","01223456")
