@@ -1,6 +1,11 @@
 package oop_113502_AltoDev.week05
 
 fun main(){
+    val math = MathHelper()
+    println("Luas Persegi:"+math.hitungluas(4))
+    println("Luas Persegi panjang:"+math.hitungluas(5,3))
+    println("Luas lingkaran:"+math.hitungluas(7.0))
+
     val dosen1 = dosen("Pak Alex","01223456")
     val admin1 = admin("Bu Siti")
 
