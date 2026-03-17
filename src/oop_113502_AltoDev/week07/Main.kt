@@ -40,4 +40,6 @@ fun main(){
     GameManager.startGame()
     GameManager.startGame()
 
+    println("Chance Legendary : ${ItemRarity.LEGENDARY}")
+    Weapon.forgeStarterSword()
 }
