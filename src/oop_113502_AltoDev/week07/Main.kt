@@ -15,4 +15,10 @@ fun main(){
     println(reg1)
     println("Sama?${reg1 == reg2}")
 
+    println("\n=== TEST DATA CLASS ===")
+    val data1 = DataUser("Alto",22)
+    val data2 = DataUser("Alto",22)
+    println(data1)
+    println("sama ? ${data1 == data2}")
+
 }
