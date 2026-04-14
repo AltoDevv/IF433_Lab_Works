@@ -1,7 +1,7 @@
 package lecture_oop
 
 fun main(){
-    var name: String = null
+    var name: String? = null
     try{
         print("$name")
         println("${name!!.uppercase()}")
