@@ -28,4 +28,14 @@ class apiparser{
         }
 
     }
+
+    fun checkout(product: product) {
+        val productId = when (product){
+            is electronic -> product.id
+            is clothing -> product.id
+        }
+
+        val trxid = JavaPaymentService.processpayment(productId)!!
+        println("Transaction ID: $trxid")
+    }
 }
