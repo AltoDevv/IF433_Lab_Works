@@ -11,7 +11,5 @@ fun main() {
         TradeLog("DOTUSDT", "LONG",   14, -4.7,  "CLOSED")
     ).shuffled()
 
-    tradeHistory.forEach {
-        println(it)
-    }
+    val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
 }
