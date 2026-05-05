@@ -6,7 +6,13 @@ fun main() {
 
     val length = name?.let {
         println("Nama terdeteksi: $it")
-        it.length
+        it.length * 2
     }
     println("Panjang nama: $length")
+
+    println("\n=== TEST RUN FUNCTION ===")
+    val result = "Kotlin".run {
+        println("Memproses kata: $this")
+    }
+    println("Hasil kalkulasi run: $result")
 }
