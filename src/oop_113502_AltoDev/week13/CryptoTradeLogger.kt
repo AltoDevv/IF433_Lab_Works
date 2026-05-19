@@ -24,3 +24,9 @@ fun fromCsvTrade(line: String): TradeRecord? {
         pnl = parts[4].toDouble()
     )
 }
+
+fun saveTrades(trades: List<TradeRecord>, path: String) {
+    File(path).printWriter().use { writer ->
+        trades.forEach { writer.println(it.toCsv()) }
+    }
+}
