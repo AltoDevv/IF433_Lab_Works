@@ -1,0 +1,1 @@
+ini contoh baris pertama pakai printwritter, 20, 3.8
